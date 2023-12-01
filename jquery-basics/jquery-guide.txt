@@ -1,0 +1,22 @@
+$("ul").parents("body")
+
+$("li").eq(1).css("color", "red");
+
+$("ul").append($("ul li:last-child").clone());
+
+$("#txt").trigger('focus');
+
+$("#btn").off('click');
+
+$("li").parent().before("<h1></h1>");
+
+$("button").remove();
+
+$("button").on('click', ()=> alert("okay"));
+
+$("#txt").val();            // Getter
+$("#txt").val('ijse');      // Setter
+$("#rdo").prop("checked")
+$("#rdo").prop("checked", true)
+$("#rdo").prop("disabled")
+$("#rdo").prop("disabled", true)

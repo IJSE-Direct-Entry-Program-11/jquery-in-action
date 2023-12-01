@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Basics</title>
+    <script type="module" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="module">
+        import $ from 'jquery';
+        window.jQuery = $;
+    </script>
+    <script type="module" src="/node_modules/jquery-ui/dist/jquery-ui.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/styles.js"></script>
+    <script type="module" src="js/ajax.js"></script>
+    <script type="module" src="js/ui.js"></script>
+    <style>
+        .bg {
+            background-color: red;
+        }
+
+        .border {
+            border: 5px solid black;
+        }
+
+        #box {
+            width: 250px;
+            height: 250px;
+            position: relative;
+            border: 5px solid red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <h1>jQuery Basics</h1>
+    <button id="btn-attach">
+        Attach Event Listeners
+    </button>
+    <button id="btn-detach-first">
+        Detach First Event Listeners
+    </button>
+    <button id="btn-detach-all">
+        Detach All Event Listeners
+    </button>
+    <hr>
+    <input id="txt" type="text">
+    <button id="btn-focus">Focus</button>
+    <button id="btn-mouse-enter">MouseEnter</button>
+    <ul>
+        <li>First <button>Delete</button></li>
+        <li>Second <button>Delete</button></li>
+        <li>Third <button>Delete</button></li>
+        <li>Fourth <button>Delete</button></li>
+        <li>Fifth <button>Delete</button></li>
+    </ul>
+    <button id="traverse-1">
+        Travese Down Hill One Level
+    </button>
+    <button id="traverse-2">
+        Travese Down Hill Multipl Levels
+    </button>
+    <hr>
+    <button id="btn-set-color">Set Color</button>
+    <button id="btn-get-color">Get Color</button>
+    <button id="btn-add-class">Add Class</button>
+    <button id="btn-has-class">Has Class</button>
+    <button id="btn-remove-class">Remove Class</button>
+    <button id="btn-fade-in">Fade In</button>
+    <button id="btn-fade-out">Fade Out</button>
+    <button id="btn-toggle">Toggle</button>
+    <hr>
+    <button id="btn-get">Send GET Reqeust</button>
+    <button id="btn-post">Send POST Reqeust</button>
+</body>
+</html>
